@@ -1,0 +1,12 @@
+This data set consists of daily measurement of levels of air pollutants and the number of total hospital admissions for circulatory and respiratory problems from January 1, 1994 to December 31, 1995. There are 8 columns in the data set
+Column 1: Observation number
+Column 2: Year (values: 1994 or 1995)
+Column 3: Month (values: 1 to 12)
+Column 4: Day (values: 1 to 31)
+Column 5: Levels of pollutants sulfur dioxide (in µg/m^3)
+Column 6: Levels of pollutants nitrogen dioxide (in µg/m^3)
+Column 7: Levels of pollutants dust (in µg/m^3)
+Column 8: The number of total hospital admissions for circulatory and respiratory problems
+
+A data subset was used to illustrate the proposed statistical procedure in Cai, Fan and Li (2000, JASA)
+

@@ -1,0 +1,1 @@
+Supermarket data was first analyzed by Wang (2009, JASA). The data set contains a total of $n=464$ daily records of the number of customers Y and the sale amounts of $p=6,398$ products.  Both the response and predictors are standardized so that they have zero sample mean and unit sample variance. The first column of marker.cvs is the response, the rest consists of predictors.

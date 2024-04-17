@@ -1,0 +1,14 @@
+
+This is the European American single nucleotide polymorphisms (SNPs) data set Price, et al (2006), 
+which consists of 488 European American samples. This data set was used in Section 7.2.5.
+The response is the height phenotype (0/1, binary variable) of these European American samples.
+It is of interest to find variables that are associated with this phenotype among a set of 277 SNPs. 
+The genotype for each SNP is a categorical variable, coded as 0/1/2. As in Price et al (2006), 
+the outlier individuals are removed. This leads to a total of 361 observations. However, for each 
+observation, approximately 2% of SNPs are missing on average.  We imputed all the missing values 
+using the R package MissForest available in  CRAN. This package uses a random forest trained 
+based on the observed entries  to predict those missing values.
+
+Response: height.pick300.pheno
+
+Covariates are SNPs in genotype.pick300.dat 

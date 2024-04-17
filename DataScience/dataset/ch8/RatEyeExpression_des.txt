@@ -1,0 +1,13 @@
+
+ This dataset was once used by Scheetz, et al. (2006) and Huang, Ma and Zhang (2008). 
+ In this dataset, 120 twelve-week-old male rats were selected for tissue
+ harvesting from the eyes and for microarray analysis. The microarrays used to analyze the
+ RNA from the eyes of these rats contain 31, 042 different probe sets in the original data set. 
+ As done in Huang, Ma  and Zhang (2008), exclude the probes that were not expressed 
+sufficiently or that lacked sufficient variation. This leaves 18,976 probes which satisfy 
+these two criteria. The response variable TRIM32, which was recently found to cause Bardet-Biedl syndrome (Chiang, et al, 2006), 
+ is one of the selected 18,976 probes. We then select 3,000 probes with the largest
+ variances from the remaining 18, 975 probes. The goal of our analysis is to identify the genes
+ that are most relevant to the expression level of TRIM32 from the 3,000 candidate genes.
+
+ The response variable TRIM32 corresponds to the row with probe.name "1389163_at".

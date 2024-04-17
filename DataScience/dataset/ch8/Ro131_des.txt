@@ -1,0 +1,7 @@
+
+The Cardiomyopathy microarray dataset was once analyzed by Segal, Dahlquist 
+and Conklin (2003), Hall and Miller (2009) and Li, Zhong and Zhu (2012). The goal is to identify the most influential
+genes for overexpression of a G protein-coupled receptor (Ro1) in mice. The response Y, which is
+the last row in Ro131.csv, is the Ro1 expression level, and the predictors Xk's are other 
+gene expression levels. Compared with the sample size n = 30 in this dataset, 
+the dimension p = 6319 is very large.
