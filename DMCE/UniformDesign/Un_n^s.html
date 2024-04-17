@@ -1,0 +1,1987 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="default">
+  <meta name="GENERATOR"
+ content="Mozilla/4.01 [zh] (Win95; I) [Netscape]">
+  <title>Uniform Design based on CL_2</title>
+</head>
+<body alink="#ffff00" bgcolor="#8080c0" link="#ffff00" text="#000000"
+ vlink="#800080">
+<script>
+<!--
+function goto1(form){
+    a1=document.aaa.D1.selectedIndex+3
+    a2=document.aaa.D2.selectedIndex+2
+    location.href='Un_n^s/U_'+a1+ '^'+a2+'.CL2'
+    /*
+    location.href='http://www.math.hkbu.edu.hk/~cxma/CL2/U_'+a1+ '^'+a2+'.CL2'
+    */
+}
+// -->
+</script>
+<h1><font color="#aa0000"><font size="+2">Uniform Design Based On
+Centered <i>L</i></font><i><sub><font size="+1">2</font></sub></i><font
+ size="+2">
+Discrepancy -- <i>U<sub>n</sub>(n<sup>s</sup>)</i></font></font></h1>
+<font color="#000000"><font size="+2">Factors</font></font>
+&nbsp;
+<center>
+<table border="1" cols="14" width="76%">
+  <tbody>
+    <tr>
+      <td align="center"><a href="#2">2</a></td>
+      <td align="center"><a href="#3">3</a></td>
+      <td align="center"><a href="#4">4</a></td>
+      <td align="center"><a href="#5">5</a></td>
+      <td align="center"><a href="#6">6</a></td>
+      <td align="center"><a href="#7">7</a></td>
+      <td align="center"><a href="#8">8</a></td>
+      <td align="center"><a href="#9">9</a></td>
+      <td align="center"><a href="#10">10</a></td>
+      <td align="center"><a href="#11">11</a></td>
+      <td align="center"><a href="#12">12</a></td>
+      <td align="center"><a href="#13">13</a></td>
+      <td align="center"><a href="#14">14</a></td>
+      <td align="center"><a href="#15">15</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="#16">16</a></td>
+      <td align="center"><a href="#17">17</a></td>
+      <td align="center"><a href="#18">18</a></td>
+      <td align="center"><a href="#19">19</a></td>
+      <td align="center"><a href="#20">20</a></td>
+      <td align="center"><a href="#21">21</a></td>
+      <td align="center"><a href="#22">22</a></td>
+      <td align="center"><a href="#23">23</a></td>
+      <td align="center"><a href="#24">24</a></td>
+      <td align="center"><a href="#25">25</a></td>
+      <td align="center"><a href="#26">26</a></td>
+      <td align="center"><a href="#27">27</a></td>
+      <td align="center"><a href="#27">28</a></td>
+      <td align="center"><a href="#27">29</a></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<form name="aaa">
+  <ul>
+    <li>
+      <input name="B1" value="   Go   " onclick="goto1(this)"
+ type="button">&nbsp;&nbsp;
+Runs:&nbsp;
+      <select name="D1" size="1">
+      <option selected="selected">3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+      <option>13</option>
+      <option>14</option>
+      <option>15</option>
+      <option>16</option>
+      <option>17</option>
+      <option>18</option>
+      <option>19</option>
+      <option>20</option>
+      <option>21</option>
+      <option>22</option>
+      <option>23</option>
+      <option>24</option>
+      <option>25</option>
+      <option>26</option>
+      <option>27</option>
+      <option>28</option>
+      <option>29</option>
+      <option>30</option>
+      </select>
+&nbsp;&nbsp;
+Factors:&nbsp;
+      <select name="D2" size="1">
+      <option selected="selected">2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+      <option>13</option>
+      <option>14</option>
+      <option>15</option>
+      <option>16</option>
+      <option>17</option>
+      <option>18</option>
+      <option>19</option>
+      <option>20</option>
+      <option>21</option>
+      <option>22</option>
+      <option>23</option>
+      <option>24</option>
+      <option>25</option>
+      <option>26</option>
+      <option>27</option>
+      <option>28</option>
+      <option>29</option>
+      </select>
+Note:
+factors should be less than runs.</li>
+  </ul>
+</form>
+<ul>
+  <li>
+&nbsp; <font size="+2"><a href="Un_ns_discpcy.html">Discrepancy
+of the designs</a></font></li>
+</ul>
+These designs are obtained by threshold accepting algorithm and can be
+not optimal. More details can be refered to the Technical Report
+MATH-233,
+Hong Kong Baptist University.
+<p>Centered <i>L<sub>2</sub> </i>Discrepancy of Random Sampling and
+Latin
+Hypercube Design, and Construction of Uniform Designs
+</p>
+<p>by <a href="http://www.math.hkbu.edu.hk/staff/ktfang.html">Kai-Tai
+Fang</a>,
+<a href="http://www.math.hkbu.edu.hk/%7Ecxma">Chang-Xing Ma</a>, and <a
+ href="mailto:winker@sonne.vwl.uni-mannheim.de">Peter
+Winker</a>.&nbsp;
+</p>
+<hr size="3" width="100%">
+<p><font size="+2"><b><font color="#cc0000">2 factors</font></b><font
+ color="#000000"> <a name="2"></a>&nbsp;<span
+ style="text-decoration: underline;"></span></font></font>
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_3%5E2.CL2">3 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_4%5E2.CL2">4 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_5%5E2.CL2">5 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_6%5E2.CL2">6 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_7%5E2.CL2">7 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_8%5E2.CL2">8 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_9%5E2.CL2">9 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_10%5E2.CL2">10 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_11%5E2.CL2">11 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_12%5E2.CL2">12 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_13%5E2.CL2">13 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E2.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E2.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E2.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E2.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E2.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E2.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E2.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E2.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E2.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E2.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E2.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E2.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E2.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E2.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E2.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E2.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E2.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">3 factors</font></b><font
+ color="#000000"> <a name="3"></a>&nbsp;</font></font>&nbsp;&nbsp;<a
+ href="#up">&nbsp;</a>
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_4%5E3.CL2">4 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_5%5E3.CL2">5 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_6%5E3.CL2">6 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_7%5E3.CL2">7 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_8%5E3.CL2">8 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_9%5E3.CL2">9 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_10%5E3.CL2">10 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_11%5E3.CL2">11 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_12%5E3.CL2">12 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_13%5E3.CL2">13 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E3.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E3.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E3.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E3.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E3.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E3.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E3.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E3.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E3.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E3.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E3.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E3.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E3.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E3.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E3.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E3.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E3.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<br>
+<font size="+2"><b><font color="#cc0000">4 factors</font></b><font
+ color="#000000"> <a name="4"></a>&nbsp;</font></font>&nbsp;&nbsp;&nbsp;
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_5%5E4.CL2">5 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_6%5E4.CL2">6 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_7%5E4.CL2">7 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_8%5E4.CL2">8 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_9%5E4.CL2">9 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_10%5E4.CL2">10 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_11%5E4.CL2">11 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_12%5E4.CL2">12 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_13%5E4.CL2">13 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E4.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E4.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E4.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E4.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E4.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E4.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E4.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E4.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E4.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E4.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E4.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E4.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E4.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E4.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E4.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E4.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E4.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<center>&nbsp;</center>
+<p><font size="+2"><b><font color="#cc0000">5 factors</font></b>&nbsp;
+<font color="#000000"><a name="5"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>&nbsp;
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_6%5E5.CL2">6 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_7%5E5.CL2">7 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_8%5E5.CL2">8 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_9%5E5.CL2">9 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_10%5E5.CL2">10 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_11%5E5.CL2">11 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_12%5E5.CL2">12 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_13%5E5.CL2">13 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E5.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E5.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E5.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E5.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E5.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E5.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E5.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E5.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E5.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E5.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E5.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E5.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E5.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E5.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E5.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E5.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E5.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">6 factors</font></b>&nbsp;
+<font color="#000000"><a name="6"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_7%5E6.CL2">7 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_8%5E6.CL2">8 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_9%5E6.CL2">9 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_10%5E6.CL2">10 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_11%5E6.CL2">11 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_12%5E6.CL2">12 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_13%5E6.CL2">13 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E6.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E6.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E6.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E6.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E6.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E6.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E6.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E6.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E6.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E6.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E6.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E6.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E6.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E6.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E6.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E6.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E6.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">7 factors</font></b>&nbsp;
+<font color="#000000"><a name="7"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_8%5E7.CL2">8 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_9%5E7.CL2">9 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_10%5E7.CL2">10 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_11%5E7.CL2">11 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_12%5E7.CL2">12 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_13%5E7.CL2">13 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E7.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E7.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E7.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E7.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E7.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E7.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E7.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E7.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E7.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E7.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E7.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E7.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E7.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E7.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E7.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E7.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E7.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">8 factors</font></b><font
+ color="#000000"> <a name="8"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center>&nbsp;</center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_9%5E8.CL2">9 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_10%5E8.CL2">10 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_11%5E8.CL2">11 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_12%5E8.CL2">12 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_13%5E8.CL2">13 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E8.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E8.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E8.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E8.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E8.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E8.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E8.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E8.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E8.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E8.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E8.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E8.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E8.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E8.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E8.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E8.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E8.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">9 factors</font></b><font
+ color="#000000"> <a name="9"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_10%5E9.CL2">10 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_11%5E9.CL2">11 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_12%5E9.CL2">12 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_13%5E9.CL2">13 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E9.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E9.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E9.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E9.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E9.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E9.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E9.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E9.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E9.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E9.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E9.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E9.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E9.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E9.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E9.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E9.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E9.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">10 factors</font></b><font
+ color="#000000"> <a name="10"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_11%5E10.CL2">11 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_12%5E10.CL2">12 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_13%5E10.CL2">13 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E10.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E10.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E10.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E10.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E10.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E10.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E10.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E10.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E10.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E10.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E10.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E10.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E10.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E10.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E10.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E10.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E10.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">11 factors</font></b><font
+ color="#000000"> <a name="11"></a>&nbsp;</font></font>&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_12%5E11.CL2">12 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_13%5E11.CL2">13 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E11.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E11.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E11.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E11.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E11.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E11.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E11.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E11.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E11.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E11.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E11.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E11.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E11.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E11.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E11.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E11.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E11.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">12 factors</font></b><font
+ color="#000000"> <a name="12"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td>
+      <center>&nbsp;</center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_13%5E12.CL2">13 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E12.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E12.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E12.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E12.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E12.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E12.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E12.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E12.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E12.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E12.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E12.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E12.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E12.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E12.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E12.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E12.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E12.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">13 factors</font></b><font
+ color="#000000"> <a name="13"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_14%5E13.CL2">14 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E13.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E13.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E13.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E13.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E13.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E13.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E13.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E13.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E13.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E13.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E13.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E13.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E13.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E13.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E13.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E13.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">14 factors</font></b><font
+ color="#000000"> <a name="14"></a>&nbsp;</font></font>&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_15%5E14.CL2">15 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E14.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E14.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E14.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E14.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E14.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E14.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E14.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E14.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E14.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E14.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E14.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E14.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E14.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E14.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E14.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">15 factors</font></b><font
+ color="#000000"> <a name="15"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_16%5E15.CL2">16 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E15.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E15.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E15.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E15.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E15.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E15.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E15.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E15.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E15.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E15.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E15.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E15.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E15.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E15.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">16 factors</font></b><font
+ color="#000000"> <a name="16"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_17%5E16.CL2">17 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E16.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E16.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E16.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E16.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E16.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E16.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E16.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E16.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E16.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E16.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E16.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E16.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E16.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">17 factors</font></b><font
+ color="#000000"> <a name="17"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_18%5E17.CL2">18 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E17.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E17.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E17.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E17.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E17.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E17.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E17.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E17.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E17.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E17.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E17.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E17.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">18 factors</font></b><font
+ color="#000000"> <a name="18"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_19%5E18.CL2">19 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E18.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E18.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E18.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E18.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E18.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E18.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E18.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E18.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E18.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E18.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E18.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">19 factors</font></b><font
+ color="#000000"> <a name="19"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_20%5E19.CL2">20 runs</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E19.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E19.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E19.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E19.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E19.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E19.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E19.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E19.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E19.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E19.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">20 factors</font></b><font
+ color="#000000"> <a name="20"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td>
+      <center><a href="Un_n%5Es/U_21%5E20.CL2">21 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E20.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E20.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E20.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E20.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E20.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E20.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E20.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E20.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E20.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">21 factors</font></b><font
+ color="#000000"> <a name="21"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_22%5E21.CL2">22 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E21.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E21.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E21.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E21.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E21.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E21.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E21.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E21.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">22 factors</font></b><font
+ color="#000000"> <a name="22"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_23%5E22.CL2">23 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E22.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E22.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E22.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E22.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E22.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E22.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E22.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">23 factors</font></b><font
+ color="#000000"> <a name="23"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_24%5E23.CL2">24 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E23.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E23.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E23.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E23.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E23.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E23.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">24 factors</font></b><font
+ color="#000000"> <a name="24"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_25%5E24.CL2">25 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E24.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E24.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E24.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E24.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E24.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">25 factors</font></b><font
+ color="#000000"> <a name="25"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_26%5E25.CL2">26 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E25.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E25.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E25.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E25.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">26 factors</font></b><font
+ color="#000000"> <a name="26"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="10" width="80%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_27%5E26.CL2">27 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E26.CL2">28 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E26.CL2">29 runs</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E26.CL2">30 runs</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<p><font size="+2"><b><font color="#cc0000">27, 28, 29 factors</font></b>
+<font color="#000000">&nbsp;<a name="27"></a>&nbsp;</font></font>&nbsp;&nbsp;
+</p>
+<center>
+<table border="1" cellpadding="3" cols="4" width="80%">
+  <tbody>
+    <tr>
+      <td>27 factors</td>
+      <td>
+      <center><a href="Un_n%5Es/U_28%5E27.CL2">28 runs &amp; 27 factors</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E27.CL2">29 runs &amp; 27 factors</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E27.CL2">30 runs &amp; 27 factors</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>28 factors</td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_29%5E28.CL2">29 runs &amp; 28 factors</a></center>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E28.CL2">30 runs &amp; 28 factors</a></center>
+      </td>
+    </tr>
+    <tr>
+      <td>29 factors</td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td>
+      <center><a href="Un_n%5Es/U_30%5E29.CL2">30 runs &amp; 29 factors</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<p>
+</p>
+<hr size="3" width="100%">
+<p>This page is maintained by <a href="mailto:cxma@math.hkbu.edu.hk">Chang-Xing
+Ma</a>
+<br>
+Last update : Wednesday, 14-Sep-1999 10:58:02 HKT
+</p>
+<p>&nbsp;
+</p>
+</body>
+</html>

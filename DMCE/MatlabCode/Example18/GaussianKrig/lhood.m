@@ -1,0 +1,10 @@
+function [like,beta,s2,Cx,CxInv] = lhood(x,theta,y0)
+[m,n] =size(x);
+sigma = 1;
+Cx = sigma*CorrMat(x,theta);
+CxInv = pinv(Cx);
+beta = pinv(ones(1,m)*CxInv*ones(m,1))*ones(1,m)*CxInv*y0;
+s2 = 1/m*(y0-beta)'*CxInv*(y0-beta);
+vari = (m*log(s2));
+dete = log(det(Cx));
+like = -0.5*(vari + dete);
