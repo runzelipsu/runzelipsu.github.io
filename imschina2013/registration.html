@@ -1,0 +1,264 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 2026 08:21:57 GMT">
+<script src=js/jquery.min.js></script>
+<script type="text/javascript" src="js/jquery.corner.js"></script>
+<title>Imscn2013</title>
+<link rel="stylesheet" type="text/css" href="css/cssBaseStyle.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript">
+    // test auto-ready logic - call corner before DOM is ready
+    $('#readyTest').corner();
+
+    $(function(){
+        $('#dynCorner').click(function() {
+            $('#dynamic').corner();
+        });
+        $('#dynUncorner').click(function() {
+            $('#dynamic').uncorner();
+        });
+
+        $('div.inner').wrap('<div class="outer"></div>');
+        $('p').wrap("<code></code>");
+
+        $('div.demo, div.inner').each(function() {
+            var t = $('p', this).text();
+            eval(t);
+        });
+
+        // fixed/fluid tests
+        $("div.box, div.plain").corner();
+        $("#abs").corner("cc:#08e");
+
+        $('.myCorner').corner();
+    });
+</script>
+<script type="text/javascript">
+//SuckerTree Vertical Menu (Aug 4th, 06)
+//
+var menuids=["suckertree1"] //Enter id(s) of SuckerTree UL menus, separated by commas
+function buildsubmenus(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className="subfolderstyle"
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  }
+}
+if (window.addEventListener)
+window.addEventListener("load", buildsubmenus, false)
+else if (window.attachEvent)
+window.attachEvent("onload", buildsubmenus)
+</script>
+
+<script>
+startList = function() {
+if (document.all&&document.getElementById) {
+navRoot = document.getElementById("nav");
+for (i=0; i<navRoot.childNodes.length; i++) {
+node = navRoot.childNodes[i];
+if (node.nodeName=="LI") {
+node.onmouseover=function() {
+this.className+=" over";
+}
+node.onmouseout=function() {
+this.className=this.className.replace(" over", "");
+}
+}
+}
+}
+}
+window.onload=startList;
+ function check(flag){
+                if(flag == true){
+                        document.getElementById("c1").style.visibility="visible";
+                        document.getElementById("c2").style.visibility="visible";
+                        document.getElementById("c3").style.visibility="visible";
+                        document.getElementById("c4").style.visibility="visible";
+                }else{
+                        document.getElementById("c1").style.visibility="hidden";
+                        document.getElementById("c2").style.visibility="hidden";
+                        document.getElementById("c3").style.visibility="hidden";
+                        document.getElementById("c4").style.visibility="hidden";
+                }
+        }
+</script>
+</head>
+<body  onload=check(false)>
+<div id=headdiv>
+<div id=headerflash>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="900" height="180">
+       <param name="movie" value="images/77.swf">
+       <param name="wmode" value="transparent">
+       <embed src="images/77.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="900" height="180" wmode="transparent"></embed>
+</object>
+</div>
+<div id=firstlogodisp>
+    <li><a href=/>Index</a></li><li>|</li><li><a href=#>Search</a></li><li>|</li>
+
+ </div>
+</div>
+<div id=searchdiv>
+</div>
+
+<div id=maindiv>
+<div id=mainl_en>
+<ul id="nav">
+
+
+<li><a  href="http://imscn2013.swufe.edu.cn/" target="_blank">Home</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/showen.php?c=37" target="_blank" >Scientific Committee</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/user.php" target="_blank">Abstract Submission</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/showen.php?c=47" target="_blank">Local Organizing Committee</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/showen.php?c=36" target="_blank">Schedule</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/showen.php?c=40" target="_blank" >Plenary Speakers</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/showen.php?c=48" target="_blank">Special invited speakers</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/showen.php?c=41" target="_blank" >Invited Speakers</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/showen.php?c=38" target="_blank" >Accommodations</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/showen.php?c=39" target="_blank" >Transportation Guide</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/showen.php?c=44" target="_blank" >Important Dates</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/showen.php?c=43" target="_blank">Excursion</a>
+<li><a  href="http://imscn2013.swufe.edu.cn/showen.php?c=46" target="_blank">Contact Us</a>
+
+</ul>
+</div>
+<div id=mainr_en>
+
+<DIV style="LINE-HEIGHT: 25px; MARGIN-LEFT: 8px"><BR><FONT face=Tahoma><FONT size=4><LABEL style="COLOR: blue">Registration</LABEL> </FONT></FONT></DIV>
+
+<br>
+
+<DIV style="LINE-HEIGHT: 20px; MARGIN-LEFT: 8px; FONT-SIZE: 14px";     font-family:"Trebuchet MS",sans-serif;>
+
+
+
+        <p>  This registration site is for non-local participants only (local participants
+          are defined as those who reside in mainland China). All local participants can
+          register this conference onsite only. </p>
+
+<br>
+
+<p>  For IMS-members, the registration fee is $300, a reduced fee
+of $200 for full time students, and $150 for every accompanying person.
+</p>
+
+<br>
+
+<p>
+For non-IMS members, the registration fee is $350. If you wish
+to join the IMS, follow the  link for conference registration below
+or visit <a href ="https://www.imstat.org/">www.imstat.org.</a>
+</p>
+
+<br>
+
+        <p> The registration includes lecture, banquet, and the first day shuttle transportation between hotel and conference site.
+        The registration is refundable before 12:00 noon June 1, 2013 (EST, USA), but not after that.
+        </p>
+
+<br>
+
+        <p><font color="#CC0000">The deadline for online registration is May 7, 2013. Onsite
+          registration will be available on the conference site between June 30 and July 4, 2013,
+          but there is a $50 extra charge. </font></p>
+
+
+<br>
+
+ <p><font color="#CC0000">Due to a limit on room capacity, we have to have a stringent cap of 14 contributed talks by nonlocal speakers.
+If you are interested in giving a contributed talk, please note that we have a first come first serve policy,
+measured by the time of completing the abstract submission.
+</font></p>
+
+<br>
+
+<p>  <a href =
+"https://secure.imstat.org/secure/registration/IMS-China-13/register.asp">If
+you are ready, click here to register.</a>
+            </p>
+            <br>
+
+            <p>
+            Notes to non-citizens of People's Republic of China
+            </p>
+
+<br>
+            <p>
+            You may be required to obtain entry visa to China.
+            If so, please apply for entry visa at your nearest Chinese embassy or consulate well in advance. 
+            You may need the following information for applying your entry visa to China.</p>
+            
+            <br>
+
+            <p> <LABEL style="COLOR: blue"> Conference hotel information:</FONT>             </p>
+            <p>
+            Hotel Name: Chengdu's Wangjiang Hotel </p>
+            <p>            
+            Address: No.42, Xiashahepu Street, Chengdu, Sichuan, P.R.China </p>
+            <p> Phone: 86-28-84090199 </p>
+            <p>Fax : 86-28-84791688
+            </p>
+
+            <br>
+
+            <p>
+            <LABEL style="COLOR: blue">Name, address, and phone number of your inviter or contact unit in China:</FONT> 
+            </p>
+            <p>
+            Huazhen Lin
+            </p>
+            <p>
+            School of Statistics
+            </p>
+            <p>            
+            Southwestern University of Finance and Economic
+            </p>
+            <p>
+            555 Liutai Avenue, Wenjiang, Chengdu, China
+            </p>
+            <p>            
+            Tel: 86-28-87092207
+            </p>
+            <p>
+            
+            <br>
+
+            <p>
+            The Chinese embassy does not normally require any letter of invitation for tourist visa.
+            However, if you apply for other types of visa, including business visa,
+            please contact Huazhen Lin (huazhenlin@hotmail.com) at least 2 months in advance for a letter of invitation
+            to visit Southwestern University of Finance and Economics.
+            </p>
+
+            <br>
+
+            <p>
+            Upon arrival, you may be asked to produce a valid passport and visa when you check in at your hotel.
+            The conference endorses no activities that are politically motivated or prohibited by the local authorities.
+            </p>
+
+
+  <br>
+  <br>
+
+
+</DIV></div>
+<div class=clear></div>
+</div>
+<div id=borderdiv>
+</div>
+<div id=fooer>
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,360 @@
+ *{margin:0;padding:0;} 	
+ body {
+                margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		background-color: #f3f4f6;
+		height:467px;
+	font-family: Tahoma, sans-serif;
+                
+		
+		
+	}
+#content{
+    font-size:1.3em;
+    font-family:Tahoma, sans-serif;
+}
+li{
+    list-style:none;
+}
+	
+    table, ul, dl, h2 {font-size: 1em}
+	caption {font-size: 1em}
+	a:link {	color:black;	text-decoration: underline;	}
+	a:visited {
+		color: blue;
+		text-decoration: underline;
+	}
+	a:hover {
+		color: blue;
+		text-decoration: none;
+	}
+	a:active {color: black;
+		text-decoration: none;
+	}
+	.newslink a{color:#fff;text-decoration: underline;}
+	span1{font-size:11px;font-style: italic;}
+
+	#headdiv{width:950px;			
+	 height:260px; 			  
+	 border:0; 			  
+	 margin:auto; 			  
+	 text-align:center; 			  
+	 background-image:url(../images/logo.jpg);
+	} 	
+
+	#searchdiv{ 		
+	 width:950px;
+	 height:0px; 		
+	 margin:auto; 		
+	 background-color:#FFF; 		
+	 background-image:url(../images/sbg.jpg);
+	} 	
+	#maindiv{ 	
+                
+	    width:950px;
+		height:auto;
+		overflow:hidden;
+		margin:0 auto;
+		padding:0px;
+		background-color:#FFF;
+		} 	
+  .navbarText {color: #000000; padding: 0px 0px 0px 0px;} 	
+    #mainl{
+		width:200px;
+		height:auto;
+		/*overflow:hidden;padding-bottom:999px;margin-bottom:-999px*/
+		float:left;
+		
+		font-weight:bold;
+		margin: 0;
+		
+		padding:1px 1px 1px 25px ;
+		background-image:url(../images/menubar.jpg);
+	} 	
+	 #mainl_en{
+		width:220px;
+		height:auto;
+		/*overflow:hidden;padding-bottom:999px;margin-bottom:-999px*/
+		float:left;
+		font-size:12px;
+		font-weight:bold;
+		margin: 0;
+		
+		padding:1px 1px 1px 25px ;
+		background-image:url(../images/menubar.jpg);
+	} 	
+	#mainr{
+		width:650px;
+		height:auto;
+	
+		float:right;	
+		padding:0 5px 0 0;
+		margin:1px 1px 1px 5px;
+		background-color:#fff;
+		}
+#mainr_en{
+    font-family:Tahoma, sans-serif;
+		width:650px;
+		height:auto;	
+		float:left;	
+		padding:0 5px 0 0;
+		margin:1px 1px 1px 5px;
+		background-color:#fff;
+		}
+	#mainr{
+		width:700px;
+		height:auto;	
+		float:right;	
+		padding:0 5px 0 0;
+		margin:1px 1px 1px 5px;
+		background-color:#fff;
+		}
+	#mainlogo{
+		width:700px;
+		height:200px;
+		/*overflow:hidden;padding-bottom:999px;margin-bottom:-999px*/	
+		margin: 0;
+		padding:0 ;
+		background-image:url(../images/mainlogo.jpg);
+		} 	
+		#logoerdiv{
+		width:640px;
+		height:10px;
+		margin:0 auto;
+		float:right;	
+		background-color:#fff;
+		} 	
+		span1{
+		margin:5px 2px;
+       float:right;
+		padding:0;	
+		} 	
+	.spanlogo{ 		margin:5px 1px 0 1px; 		padding:0px;	 		border:1px #987cb9 solid; 		
+		overflow:hidden; 	} 		 		 	
+		#borderdiv{ 		width:900px; 		height:1px; 		margin:0 auto;	 		
+		background-color:#369; 		} 	
+		#fooer{
+                text-align:center;
+		width:950px;
+		height:60px;
+		margin:0 auto;
+		background-image:url(../images/footer.jpg);
+		background-color:#369; 		} 	
+.mynavlist{
+		height:1px;
+		background: #369;
+	}
+  /*******************nnava*******************/
+	 ul {
+	  margin: 0px;
+	  padding: 0px;
+	  list-style: none;
+	  width: 160px; /* Width of Menu Items */
+	  border-bottom: 0px dotted #ccc;  
+	  color: #fff;
+	  }
+	ul li {
+	  margin:0px;
+	  position: relative;
+	  color: #fff;
+	  }
+	
+	/* Styles for Menu Items */
+	ul li a{
+	  display: block;
+	  text-decoration: none;
+	  color: #fff;
+	  background: #52a0ff; /* IE6 Bug */
+	  padding: 10px;
+	  border: 0px solid #ccc;
+	  /*border-bottom: 1px;  border-color:#369;*/
+	  border-bottom: 1px dotted #cfc; 
+	  width:150px;
+	  }
+	li ul {
+	  position: absolute;		
+	   width:260px;
+		 height:55px;
+	  left: 170px; /* Set 1px less than menu width */
+	  top: 0;  
+	  display: none;
+	  color: #fff;
+	  }
+	ul li   a:hover{
+		background:#f7941d url(../images/menu_006_h.jpg) repeat-x top;
+		/*color:#fff;*/
+		text-decoration:none;
+		} 	li ul  a:hover{
+		background:#f7941d url(../images/menu_006_h.jpg) repeat-x top;
+		/*color:#fff;*/
+		text-decoration:none;
+		} 	#headerflash{
+		margin:0;
+		padding:0;
+		height:240px;
+		width:900px;
+	  } 	#firstlogodisp{
+		margin:0 0px 0 5px;
+	    padding:0px;
+		text-align:left;
+		width:650px;
+		height:20px;
+		color:#fff;
+        float:left;
+	}
+	#firstlogodisp li{
+		   margin:0 5px;
+	       padding:0 1px;			 
+		color:#fff;
+	     display:inline; 
+		}
+	
+	#firstlogodisp li a:link{
+		background-image:url(../images/nav_bg.gif);        
+		text-decoration: underline;
+		color: #fff;
+	}
+	#firstlogodisp li a:hover{
+		background:#ccc;	
+		text-decoration: none;  
+		color: #fff;
+	} 	#firstlogodisp li a:visited{
+        background-image:url(../images/nav_bg.gif); 			
+		text-decoration: none;
+		color: #ff1; 	} 	/***********/ 	#main { background: #fff; padding: 10px }	 	div.section { clear: left; } 	div.section h1 { padding: 20px 20px 0 20px } 	div.section h2 { background: #fff; padding: 1px 20px;  } 	div.demo, div.inner { color: #000; list-style:none;}
+    div.inner li a{ color: #000; list-style:none;}
+    div.inner li a:hover{ color: #6af;  background:#f79;} 	div.demo  { float: left; width: 320px; padding: 1px; margin: 1px; background: #fff;} 	div.demo2  { float: right; width: 320px; padding: 1px; margin: 1px; background: #fff;}	 	
+    .newslistindex { float: left; width: 700px; padding: 0px; margin: 2px; background: #6af;border:#ddd 1px solid;} 	.newslistindex li { list-style:none;padding-left:0px; 				border-bottom:1px dashed #CCCCCC; 				 margin:0px; 				 padding:0px; 				} 	.newslistindex li a{ 	   list-stule:cycle; 					display:block; 					background:#fff url(images/menu_006_bg.jpg) repeat-y left; 					color:#000; 					text-transform:uppercase; 					font-size:12px; 					text-decoration:none; 					padding:1px;     }     .newslistindex li a:hover{ 						background:#f7941d url(../images/menu_006_h.jpg) repeat-x top; 						color:#fff; 						text-decoration:none;     	 	} 	.newslistindex .inner2 { color: #000;  font-family:"Trebuchet MS",sans-serif;				margin: 0; background: #fff; padding: 1px; border:0; zoom:1; 				} 	.newslistindex .inner2 li a:link{							 
+							 color:#000;
+							 text-decoration:none;
+							 }
+	.newslistindex .inner2 li a:hover{							 
+								 color:#000;
+								 text-decoration:none;
+								 }
+	.newslistindex .inner2 li a:visited{							 
+							 color:#000;
+							 text-decoration:none;
+							 } 	.newslistindex .inner2 li a .ldt{
+							  display:block;
+								 width:600px;
+								 float:left;
+								 line-height:30px;
+								 text-indent:5px;
+								 text-decoration:none;
+								 white-space:nowrap;  
+								 text-overflow:ellipsis; 
+								 overflow:hidden;
+								 display:inline; } 	div.inner { margin: 0; background: #fff; padding: 1px; border:0; zoom:1;}
+	div.outer { float: left; margin: 15px; background: #c82; padding: 8px; width: 22em }
+	div.fun   { margin: 2px; }
+	div#readyTest { background-color: #6af; float: right; padding: 10px; height: 20px } 	#abs { position: absolute; width: 200px; background: #ffa;
+		padding: 5px; margin: 8px; top: 0; right: 0; text-align: center } 	/* fixed height/width testing */
+	.box  { background-color: #6af; padding: 15px; text-align: center; margin: 25px }
+	#box1 { zoom:1 }                                       /* fluid (zoom for layout) */
+	#box2 { height: 150px;  }                              /* fixed height */
+	#box3 { width:  300px; margin:auto }                   /* fixed width */
+	#box4 { height: 150px; width: 300px; margin:auto }     /* fixed height and width */
+ 	div.plain  { background-color: #6af; text-align: center; }
+	b { color: #f44 } 	#twitter { float:right; right: 20px; }
+	#twitter a { text-decoration: none;  vertical-align: top }
+	#twitter img { border: none; float: left }
+	div.desc { margin: 10px } 	/* Fix IE. Hide from IE Mac \*/
+	* html ul li { float: left; height: 1%; }
+	* html ul li a { height: 1%; }
+	/* End */	
+	ul li a:hover { color: #E21; background: #f9f9f9; } /* Hover Styles */		
+	li ul li a { padding: 2px 5px; } /* Sub Menu Styles */		
+	li:hover ul, li.over ul { display: block; } /* The magic */
+	.news{width:640px;border:#ddd 1px solid; margin:5px;}
+	.news2{width:620px;border:#ddd 1px solid; margin:5px;padding:10px;}
+	.news ul{padding:5px 10px;}
+	.news ul li{height:24px;line-height:24px;overflow:hidden;}
+	
+	/* Clear Fix */
+	.clearfix:after{
+   content:  ".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+	}
+	.clear{
+	content:  "." ;
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+	}
+	.clear2{clear:both;}
+	.clearfix{
+	display:inline-block;
+	}
+	/* Hide from IE Mac */
+	.clearfix {display:block;}
+	/* End hide from IE Mac */
+	/* end of clearfix */
+	
+	.suckerdiv ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 160px; /* Width of Menu Items */
+	border-bottom: 1px dotted  #ccc;
+		color: #fff;
+	}
+		
+	.suckerdiv ul li{
+	 margin:0px;
+		  position: relative;
+		  color: #fff;
+	}
+		
+	/*1st level sub menu style */
+	.suckerdiv ul li ul{
+	left: 160px; /* Parent menu width - 1*/
+	position: absolute;
+	width: 160px; /*sub menu width*/
+	top: 0;
+	display: none;
+	}
+	
+	/*All subsequent sub menu levels offset */
+	.suckerdiv ul li ul li ul{ 
+	left: 160px; /* Parent menu width - 1*/
+	}
+	
+	/* menu links style */
+	.suckerdiv ul li a{
+	display: block;
+	color: black;
+	text-decoration: underline;
+	background: #fff;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	}
+	
+	.suckerdiv ul li a:visited{
+	color: black;
+	background: #fff;
+	}
+	
+	.suckerdiv ul li a:hover{
+	color: #336699;
+	background: #6af;
+	}
+	
+	.suckerdiv .subfolderstyle{
+	background: url(../images/arrow-list.gif) no-repeat center right;
+	}
+	
+		
+	/* Holly Hack for IE \*/
+	* html .suckerdiv ul li { float: left; height: 1%; }
+	* html .suckerdiv ul li a { height: 1%; }
+	* html .borderdiv  { height: 1px; }
+	/* End  */
+		
